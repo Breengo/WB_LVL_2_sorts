@@ -1,0 +1,133 @@
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 95vh;
+}
+
+input {
+  background-color: rgba(255, 255, 255, 0.21);
+  border: none;
+  outline: none;
+  padding: 15px;
+  width: 300px;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 64px;
+  margin-bottom: 30px;
+}
+
+#addNumber {
+  margin-top: 20px;
+  width: 300px;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.21);
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.87);
+  border-radius: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#addNumber:hover {
+  background-color: rgba(255, 255, 255, 0.21);
+}
+
+#sortController {
+  margin-top: 20px;
+  width: 300px;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.21);
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.87);
+  border-radius: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#sortController:hover {
+  background-color: rgba(255, 255, 255, 0.21);
+}
+
+#array {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#sortVisualizer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 20px;
+  width: 1200px;
+  height: 600px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 15px;
+  gap: 20px;
+}
+
+#sortVisualizer > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  font-weight: 700;
+  background-color: rgb(253, 214, 85);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+#sortOptions {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+#sortOptions > button {
+  width: 220px;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.87);
+  border-radius: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: transparent;
+}
+#sortOptions > .active {
+  background-color: blueviolet;
+}
+
+#sortOptions > .active:hover {
+  background-color: blueviolet;
+}
+
+#sortOptions > button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
